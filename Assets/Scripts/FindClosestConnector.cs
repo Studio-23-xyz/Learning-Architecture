@@ -12,7 +12,8 @@ public class FindClosestConnector : MonoBehaviour
     [SerializeField] private HingeJoint2D hingeJoint01;
     [SerializeField] private HingeJoint2D hingeJoint02;
     [SerializeField] private Rigidbody2D rb;
-    
+
+    public HingeJoint2D[]  hingeJoint2Ds;
     
     [ContextMenu("Find The Closest Connector")]
     public void ConfigureHingeJoint()
@@ -39,6 +40,11 @@ public class FindClosestConnector : MonoBehaviour
             hingeJoint02.anchor = new Vector2(0.5f, 0f);
             hingeJoint02.breakForce = 100;
         }
+
+        hingeJoint2Ds = GetComponents<HingeJoint2D>();
+        
+        hingeJoint2Ds[0].anchor = new Vector2(-0.5f, 0f);
+        hingeJoint2Ds[1].anchor = new Vector2(0.5f, 0f);
     }
     public void SetRigidbodyToStatic()
     {

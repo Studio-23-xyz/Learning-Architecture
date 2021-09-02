@@ -200,8 +200,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 65699815}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.8, y: 0.6209, z: 0}
-  m_LocalScale: {x: 11.533215, y: 13.765784, z: 2.457826}
+  m_LocalPosition: {x: 35.3318, y: 0.6209, z: 0}
+  m_LocalScale: {x: 12.469711, y: 13.765784, z: 2.457826}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
@@ -829,7 +829,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 265752022}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30, y: 7, z: 0}
+  m_LocalPosition: {x: 29, y: 7, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1942,7 +1942,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 895181460}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7, y: 2, z: 0}
+  m_LocalPosition: {x: 7, y: 1, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2767,6 +2767,7 @@ MonoBehaviour:
   hingeJoint01: {fileID: 0}
   hingeJoint02: {fileID: 0}
   rb: {fileID: 0}
+  hingeJoint2Ds: []
 --- !u!4 &1404637182
 Transform:
   m_ObjectHideFlags: 0
@@ -4163,7 +4164,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001788999}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30, y: 2, z: 0}
+  m_LocalPosition: {x: 29, y: 1, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_Children: []
   m_Father: {fileID: 0}
