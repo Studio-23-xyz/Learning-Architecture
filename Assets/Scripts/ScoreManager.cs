@@ -1,30 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
+using Scriptable_object;
 using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
-    dreamloLeaderBoard dl;
-    // Start is called before the first frame update
+    dreamloLeaderBoard _dl;
+    [SerializeField] private NameScoreLevelCollector nameScoreLevelCollector;
+
+    private string _playerName;
+    private int _totalScore;
+    private int _levelNumber;
+    
     void Start()
     {
-        this.dl = dreamloLeaderBoard.GetSceneDreamloLeaderboard();
+        this._dl = dreamloLeaderBoard.GetSceneDreamloLeaderboard();
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    public void On_Click_SendScore()
     {
-        
-    }
-
-    public void SendScore()
-    {
-        //dl.AddScore(this.playerName, totalScore);
+        _playerName = nameScoreLevelCollector.playerName;
+        _totalScore = nameScoreLevelCollector.score;
+        _levelNumber = nameScoreLevelCollector.level;
+        _dl.AddScore(this._playerName, _totalScore, _levelNumber);
     }
 
     public void GetLeaderBoard()
     {
-        List<dreamloLeaderBoard.Score> scoreList = dl.ToListHighToLow();
+        List<dreamloLeaderBoard.Score> scoreList = _dl.ToListHighToLow();
     }
 
 }
