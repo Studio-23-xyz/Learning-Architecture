@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
@@ -10,6 +11,9 @@ namespace Michsky.UI.ModernUIPack
         public PlayType playType;
         public Animator iconAnimator;
 
+        public UnityEvent onFunction;
+        public UnityEvent offFunction;
+        
         bool isClicked;
 
         public enum PlayType
@@ -29,12 +33,14 @@ namespace Michsky.UI.ModernUIPack
             if (isClicked == true)
             {
                 iconAnimator.Play("Out");
+                offFunction.Invoke();
                 isClicked = false;
             }
 
             else
             {
                 iconAnimator.Play("In");
+                onFunction.Invoke();
                 isClicked = true;
             }
         }

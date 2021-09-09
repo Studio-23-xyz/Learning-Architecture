@@ -97,6 +97,7 @@ public class LeaderBoardSample : MonoBehaviour {
 		{
 			GUILayout.Label("High Scores:");
 			List<dreamloLeaderBoard.Score> scoreList = dl.ToListHighToLow();
+			Debug.Log("ScoreList Count" + scoreList.Count);
 			
 			if (scoreList == null) 
 			{
