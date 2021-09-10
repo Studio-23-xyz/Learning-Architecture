@@ -22,4 +22,12 @@ public class MaterialCost : MonoBehaviour
         _costManager.SumOfTotalCost(cost);
         
     }
+    
+    public void CostDecreaseToTheMainBudget()
+    {
+        _costManager.DecreaseCost(cost);
+        
+    }
+    
+    
 }

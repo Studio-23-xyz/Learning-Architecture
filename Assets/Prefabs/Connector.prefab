@@ -158,9 +158,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0451b84b8bf1bba498f94b30c035411e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleAmount: 2.82
   rotationAmount: 90
   materialCost: {fileID: -4398065145438355310}
+  scaleAmount: 2.82
+  minLength: 3
+  maxLength: 10
 --- !u!50 &8561090925157789175
 Rigidbody2D:
   serializedVersion: 4
@@ -250,6 +252,7 @@ MonoBehaviour:
   hingeJoint01: {fileID: 1400376839348444508}
   hingeJoint02: {fileID: 4864444494998236434}
   rb: {fileID: 8561090925157789175}
+  hingeJoint2Ds: []
 --- !u!114 &-4398065145438355310
 MonoBehaviour:
   m_ObjectHideFlags: 0

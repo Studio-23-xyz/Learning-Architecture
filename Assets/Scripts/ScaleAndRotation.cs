@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class ScaleAndRotation : MonoBehaviour
 {
-    [SerializeField] private float scaleAmount;
+    
 
     private Vector3 _tempLocalScale;
 
@@ -19,28 +19,33 @@ public class ScaleAndRotation : MonoBehaviour
     private Button _rotateButton;
 
     [SerializeField] private MaterialCost materialCost;
-
-    //[SerializeField] private HingeJoint2D _hingeJoint2D;
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //Debug.Log(_hingeJoint2D.connectedAnchor);
-        
-    }
-
+    [SerializeField] private float scaleAmount;
+    [SerializeField] private float minLength;
+    [SerializeField] private float maxLength;
+    
     [ContextMenu("IncreaseScale")]
     public void IncreaseScale()
     {
-        _tempLocalScale = transform.localScale;
-        _tempLocalScale.x += scaleAmount;
-        transform.localScale = _tempLocalScale;
-        materialCost.CostAddToTheMainBudget();
+        if (transform.localScale.x < maxLength)
+        {
+            _tempLocalScale = transform.localScale;
+            _tempLocalScale.x += scaleAmount;
+            transform.localScale = _tempLocalScale;
+            materialCost.CostAddToTheMainBudget();
+        }
+        
+    }
+    
+    public void DecreaseScale()
+    {
+        if (transform.localScale.x > minLength)
+        {
+            _tempLocalScale = transform.localScale;
+            _tempLocalScale.x -= scaleAmount;
+            transform.localScale = _tempLocalScale;
+            materialCost.CostDecreaseToTheMainBudget();
+        }
+        
     }
 
     [ContextMenu("Rotate")]
@@ -54,9 +59,13 @@ public class ScaleAndRotation : MonoBehaviour
 
     private void OnMouseUpAsButton()
     {
-        _scaleButton = GameObject.Find("ScaleButton").GetComponent<Button>();
+        _scaleButton = GameObject.Find("IncreaseButton").GetComponent<Button>();
         _scaleButton.onClick.RemoveAllListeners();
         _scaleButton.onClick.AddListener(() => IncreaseScale());
+        
+        _scaleButton = GameObject.Find("DecreaseButton").GetComponent<Button>();
+        _scaleButton.onClick.RemoveAllListeners();
+        _scaleButton.onClick.AddListener(() => DecreaseScale());
         
         _rotateButton = GameObject.Find("RotateButton").GetComponent<Button>();
         _rotateButton.onClick.RemoveAllListeners();

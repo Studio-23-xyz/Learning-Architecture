@@ -316,9 +316,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0451b84b8bf1bba498f94b30c035411e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleAmount: 2
   rotationAmount: 0
   materialCost: {fileID: -333687443106535760}
+  scaleAmount: 2
+  minLength: 2
+  maxLength: 6
 --- !u!114 &-4032916424569964343
 MonoBehaviour:
   m_ObjectHideFlags: 0

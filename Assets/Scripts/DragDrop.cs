@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
-    [SerializeField] private Canvas canvas;
+    private Canvas _canvas;
     
     private RectTransform _rectTransform;
     
@@ -16,16 +16,21 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     
     [SerializeField] private GameObject roadPrefab;
 
-    [SerializeField] private GameObject roadPrefabParent;
+    private GameObject _roadPrefabParent;
 
-    [SerializeField] private Camera mainCamera;
+    private Camera _mainCamera;
     
     private GameObject _newRoad;
     
     private GameObject _newRoadPrefab;
 
-    
-    
+    private void Start()
+    {
+        _canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+        _roadPrefabParent = GameObject.Find("Road Parent");
+        _mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
+    }
+
 
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -35,15 +40,15 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     
     public void OnDrag(PointerEventData eventData)
     {
-        _rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+        _rectTransform.anchoredPosition += eventData.delta / _canvas.scaleFactor;
         Debug.Log("drag");
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
         Destroy(_newRoad);
-        _newRoadPrefab = Instantiate(roadPrefab, parent.transform.position, roadPrefab.transform.rotation, roadPrefabParent.transform);
-        Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        _newRoadPrefab = Instantiate(roadPrefab, parent.transform.position, roadPrefab.transform.rotation, _roadPrefabParent.transform);
+        Vector3 mouseWorldPosition = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPosition.z = 0;
         _newRoadPrefab.transform.position = mouseWorldPosition;
     }
