@@ -8,10 +8,10 @@ using UnityEngine.SceneManagement;
 public class LevelComplete : MonoBehaviour
 {
     //public GameObject successUI;
-    public ModalWindowManager failUI;
-    public GameObject nameInputField;
-    public GameObject leaderBoard;
-    public ModalWindowManager successUI;
+     ModalWindowManager failUI;
+     GameObject nameInputField;
+     GameObject leaderBoard;
+     ModalWindowManager successUI;
 
     private void Start()
     {

@@ -1469,6 +1469,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &656628688 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 327108925476826040, guid: 47432fd24b5110a49b1664973ca4e84e, type: 3}
+  m_PrefabInstance: {fileID: 786835257}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 212e61be503a7a040ba3b4ec6d9c81a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &667743712 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4472778064660710234, guid: 0e1da3cf271f2bd4fa7b05b8d45afa3f, type: 3}
@@ -5952,11 +5963,15 @@ PrefabInstance:
     - target: {fileID: 4472778064077350798, guid: 0e1da3cf271f2bd4fa7b05b8d45afa3f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[6].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 656628688}
     - target: {fileID: 4472778064077350798, guid: 0e1da3cf271f2bd4fa7b05b8d45afa3f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[7].m_Target
       value: 
       objectReference: {fileID: 1584781192}
+    - target: {fileID: 4472778064077350798, guid: 0e1da3cf271f2bd4fa7b05b8d45afa3f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[6].m_MethodName
+      value: SendTotalScore
+      objectReference: {fileID: 0}
     - target: {fileID: 4472778064357500914, guid: 0e1da3cf271f2bd4fa7b05b8d45afa3f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

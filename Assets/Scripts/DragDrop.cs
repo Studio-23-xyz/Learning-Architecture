@@ -30,6 +30,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         _canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
         //_roadPrefabParent = GameObject.Find("Road Parent");
         _mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
+        //_roadPrefabParent = GameObject.Find("Road Parent");
     }
 
 

@@ -66,4 +66,7 @@ public class GetChildFromParents : MonoBehaviour
            
         }
     }
+    
+    
+    
 }
