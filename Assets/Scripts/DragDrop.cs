@@ -16,7 +16,8 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     
     [SerializeField] private GameObject roadPrefab;
 
-    private GameObject _roadPrefabParent;
+    
+    [SerializeField] private GameObject _roadPrefabParent;
 
     private Camera _mainCamera;
     
@@ -27,7 +28,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     private void Start()
     {
         _canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
-        _roadPrefabParent = GameObject.Find("Road Parent");
+        //_roadPrefabParent = GameObject.Find("Road Parent");
         _mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
     }
 

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf1dcf948f4aa224897a6e1b28b735e6, type: 3}
   m_Name: Name Score Level Collector
   m_EditorClassIdentifier: 
-  playerName: 
-  score: 0
-  level: 0
+  playerName: abc
+  score: 1300
+  level: 1

@@ -8,6 +8,8 @@ TagManager:
   - Connector
   - Connector Finder
   - Static Connector
+  - LostArea
+  - WinArea
   layers:
   - Default
   - TransparentFX
