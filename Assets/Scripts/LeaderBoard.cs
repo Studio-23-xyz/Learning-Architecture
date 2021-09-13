@@ -44,7 +44,7 @@ public class LeaderBoard : MonoBehaviour
         foreach (dreamloLeaderBoard.Score currentScore in scoreList)
         {
             _tempName = Instantiate(PlayerNamePrefab, transform.position, transform.rotation, PlayerNameParent);
-            _tempName.transform.GetChild(0).GetComponent<TMP_Text>().text = currentScore.playerName;
+            _tempName.transform.GetChild(0).GetComponent<TMP_Text>().text = currentScore.playerName + "  "+ currentScore.score;
         }
     }
 
