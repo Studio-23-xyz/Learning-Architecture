@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Scriptable_object;
 using TMPro;
 //using UnityEditor.PackageManager.UI;
 using UnityEngine;
@@ -12,28 +13,32 @@ public class LeaderBoard : MonoBehaviour
     public Transform PlayerNameParent;
     public List<dreamloLeaderBoard.Score> scoreList;
     public GameObject leaderBoardGameObject;
+    public NameScoreLevelCollector nameScoreLevelCollector;
     
     private GameObject _tempName;
     private dreamloLeaderBoard leaderBoardObject;
 
     private void OnEnable()
     {
-        leaderBoardObject =leaderBoardGameObject.GetComponent<dreamloLeaderBoard>();
+        leaderBoardObject = leaderBoardGameObject.GetComponent<dreamloLeaderBoard>();
         leaderBoardObject.GetScores();
     }
 
     void Start()
     {
-        this._dl = dreamloLeaderBoard.GetSceneDreamloLeaderboard();
+        _dl = dreamloLeaderBoard.GetSceneDreamloLeaderboard();
     }
         
     [ContextMenu("Get Leader Board")]
     public void GetLeaderBoard()
     {
         
-        
+        foreach (Transform child in PlayerNameParent.transform) 
+        {
+            Destroy(child.gameObject);
+        }
         //_dl.AddScore("Empty", 0);
-        scoreList = leaderBoardObject.ToListHighToLow();
+        scoreList = leaderBoardObject.ToListLowToHigh();
 
 
         // while (scoreList == null)
@@ -43,8 +48,12 @@ public class LeaderBoard : MonoBehaviour
         Debug.Log( scoreList.Count);
         foreach (dreamloLeaderBoard.Score currentScore in scoreList)
         {
-            _tempName = Instantiate(PlayerNamePrefab, transform.position, transform.rotation, PlayerNameParent);
-            _tempName.transform.GetChild(0).GetComponent<TMP_Text>().text = currentScore.playerName + "  "+ currentScore.score;
+            if (currentScore.seconds == nameScoreLevelCollector.level)
+            {
+                _tempName = Instantiate(PlayerNamePrefab, transform.position, transform.rotation, PlayerNameParent);
+                _tempName.transform.GetChild(0).GetComponent<TMP_Text>().text = currentScore.playerName + "  "+ currentScore.score;
+            }
+            
         }
     }
 
