@@ -23,6 +23,7 @@ public class ScoreManager : MonoBehaviour
         _totalScore = nameScoreLevelCollector.score;
         _levelNumber = nameScoreLevelCollector.level;
         _dl.AddScore(this._playerName, _totalScore, _levelNumber);
+        Debug.Log("Data Is Sent");
     }
 
     public void GetLeaderBoard()

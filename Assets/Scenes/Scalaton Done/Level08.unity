@@ -513,7 +513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalCost: 0
-  nameScoreLevelCollector: {fileID: 0}
+  nameScoreLevelCollector: {fileID: 11400000, guid: d1545447831c9c04c9a329dbdcbdd42c, type: 2}
 --- !u!1 &237567689
 GameObject:
   m_ObjectHideFlags: 0
@@ -1358,11 +1358,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5468613500038114790, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5468613500038114790, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5468613500038114790, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1374,7 +1374,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5468613500038114790, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 5468613500195427715, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -1438,11 +1438,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5468613501433899683, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5468613501433899683, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5468613501433899683, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1454,7 +1454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5468613501433899683, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,11 +19,28 @@ public class ScaleAndRotation : MonoBehaviour
 
     private Button _rotateButton;
 
+    private Button _deleteButton;
+
+    private int _remainingScale;
+
+    private ModificatorOnOff _modificatorOnOff;
+
+    private TMP_Text _remainingScaleText;
+
     [SerializeField] private MaterialCost materialCost;
     [SerializeField] private float scaleAmount;
     [SerializeField] private float minLength;
     [SerializeField] private float maxLength;
+    [SerializeField] private int scaled = 1;
+    [SerializeField] private int maxScale;
     
+
+    private void Start()
+    {
+        _modificatorOnOff = GameObject.Find("ModificatorOnOff").GetComponent<ModificatorOnOff>();
+
+    }
+
     [ContextMenu("IncreaseScale")]
     public void IncreaseScale()
     {
@@ -32,8 +50,9 @@ public class ScaleAndRotation : MonoBehaviour
             _tempLocalScale.x += scaleAmount;
             transform.localScale = _tempLocalScale;
             materialCost.CostAddToTheMainBudget();
+            scaled++;
+            RemainingScale();
         }
-        
     }
     
     public void DecreaseScale()
@@ -44,8 +63,9 @@ public class ScaleAndRotation : MonoBehaviour
             _tempLocalScale.x -= scaleAmount;
             transform.localScale = _tempLocalScale;
             materialCost.CostDecreaseToTheMainBudget();
+            scaled--;
+            RemainingScale();
         }
-        
     }
 
     [ContextMenu("Rotate")]
@@ -54,11 +74,24 @@ public class ScaleAndRotation : MonoBehaviour
         _tempRotation = transform.eulerAngles;
         _tempRotation.z += rotationAmount;
         transform.eulerAngles = _tempRotation;
+    }
 
+    public void Delete()
+    {
+        
+        materialCost.CostDecreaseToTheMainBudget(scaled);
+        _modificatorOnOff.InActiveModificatorUI();
+        Destroy(gameObject);
     }
 
     private void OnMouseUpAsButton()
     {
+        
+        
+        _modificatorOnOff.HighlightingGameObject(gameObject);
+        _remainingScaleText = GameObject.Find("Remaining Scale").GetComponent<TMP_Text>();
+        RemainingScale();
+        
         _scaleButton = GameObject.Find("IncreaseButton").GetComponent<Button>();
         _scaleButton.onClick.RemoveAllListeners();
         _scaleButton.onClick.AddListener(() => IncreaseScale());
@@ -70,5 +103,17 @@ public class ScaleAndRotation : MonoBehaviour
         _rotateButton = GameObject.Find("RotateButton").GetComponent<Button>();
         _rotateButton.onClick.RemoveAllListeners();
         _rotateButton.onClick.AddListener(() => Rotate());
+
+        _deleteButton = GameObject.Find("DeleteButton").GetComponent<Button>();
+        _deleteButton.onClick.RemoveAllListeners();
+        _deleteButton.onClick.AddListener(Delete);
+
+        
+    }
+
+    private void RemainingScale()
+    {
+        _remainingScale = maxScale - scaled;
+        _remainingScaleText.text = "scale: " + _remainingScale;
     }
 }

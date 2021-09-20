@@ -570,7 +570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalCost: 0
-  nameScoreLevelCollector: {fileID: 0}
+  nameScoreLevelCollector: {fileID: 11400000, guid: d1545447831c9c04c9a329dbdcbdd42c, type: 2}
 --- !u!1 &237567689
 GameObject:
   m_ObjectHideFlags: 0
@@ -2822,6 +2822,8 @@ MonoBehaviour:
   scaleAmount: 1
   minLength: 0
   maxLength: 0
+  scaled: 1
+  maxScale: 0
 --- !u!233 &1373495979
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -2908,6 +2910,8 @@ MonoBehaviour:
   scaleAmount: 1
   minLength: 0
   maxLength: 0
+  scaled: 1
+  maxScale: 0
 --- !u!233 &1387713490
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -3134,6 +3138,8 @@ MonoBehaviour:
   scaleAmount: 1.42
   minLength: 0
   maxLength: 0
+  scaled: 1
+  maxScale: 0
 --- !u!1 &1424868277
 GameObject:
   m_ObjectHideFlags: 0
@@ -3605,6 +3611,8 @@ MonoBehaviour:
   scaleAmount: 1
   minLength: 0
   maxLength: 0
+  scaled: 1
+  maxScale: 0
 --- !u!233 &1555298327
 HingeJoint2D:
   m_ObjectHideFlags: 0

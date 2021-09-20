@@ -2715,6 +2715,8 @@ MonoBehaviour:
   scaleAmount: 1
   minLength: 0
   maxLength: 0
+  scaled: 1
+  maxScale: 0
 --- !u!233 &1373495979
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -2801,6 +2803,8 @@ MonoBehaviour:
   scaleAmount: 1
   minLength: 0
   maxLength: 0
+  scaled: 1
+  maxScale: 0
 --- !u!233 &1387713490
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -3027,6 +3031,8 @@ MonoBehaviour:
   scaleAmount: 1.42
   minLength: 0
   maxLength: 0
+  scaled: 1
+  maxScale: 0
 --- !u!1 &1424868277
 GameObject:
   m_ObjectHideFlags: 0
@@ -3338,6 +3344,8 @@ MonoBehaviour:
   scaleAmount: 1
   minLength: 0
   maxLength: 0
+  scaled: 1
+  maxScale: 0
 --- !u!233 &1555298327
 HingeJoint2D:
   m_ObjectHideFlags: 0
@@ -5195,22 +5203,6 @@ PrefabInstance:
       propertyPath: leaderBoardGameObject
       value: 
       objectReference: {fileID: 198950064}
-    - target: {fileID: 1428299271817306090, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
-      propertyPath: nameScoreLevelCollector
-      value: 
-      objectReference: {fileID: 11400000, guid: d1545447831c9c04c9a329dbdcbdd42c, type: 2}
-    - target: {fileID: 5468613499594973866, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5468613499594973866, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5468613499594973866, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5468613499603077263, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: _roadPrefabParent
       value: 
@@ -5323,22 +5315,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5468613500125826184, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5468613500125826184, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5468613500125826184, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5468613500125826184, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5468613500195427715, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -5383,66 +5359,14 @@ PrefabInstance:
       propertyPath: _roadPrefabParent
       value: 
       objectReference: {fileID: 1693612856}
-    - target: {fileID: 5468613500877345280, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5468613500877345280, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5468613500877345280, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5468613500877345280, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5468613500899146234, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: leaderBoardGameObject
       value: 
       objectReference: {fileID: 198950064}
-    - target: {fileID: 5468613501035899744, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5468613501342384077, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: _roadPrefabParent
       value: 
       objectReference: {fileID: 1327900299}
-    - target: {fileID: 5468613501362715275, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5468613501362715275, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5468613501362715275, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5468613501362715275, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5468613501427998443, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5468613501427998443, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5468613501427998443, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5468613501427998443, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5468613501433899683, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
