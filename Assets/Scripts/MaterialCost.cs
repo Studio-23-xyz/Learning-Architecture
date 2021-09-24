@@ -29,5 +29,10 @@ public class MaterialCost : MonoBehaviour
         
     }
     
+    public void CostDecreaseToTheMainBudget(int scaled)
+    {
+        _costManager.DecreaseCost(cost * scaled);
+    }
+    
     
 }

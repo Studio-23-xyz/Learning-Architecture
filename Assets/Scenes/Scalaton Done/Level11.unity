@@ -570,7 +570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalCost: 0
-  nameScoreLevelCollector: {fileID: 0}
+  nameScoreLevelCollector: {fileID: 11400000, guid: d1545447831c9c04c9a329dbdcbdd42c, type: 2}
 --- !u!1 &237567689
 GameObject:
   m_ObjectHideFlags: 0
