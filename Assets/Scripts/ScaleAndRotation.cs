@@ -38,6 +38,7 @@ public class ScaleAndRotation : MonoBehaviour
     private void Start()
     {
         _modificatorOnOff = GameObject.Find("ModificatorOnOff").GetComponent<ModificatorOnOff>();
+        ActivateModificationFunctionalityForThisGameObject();
 
     }
 
@@ -86,20 +87,23 @@ public class ScaleAndRotation : MonoBehaviour
 
     private void OnMouseUpAsButton()
     {
-        
-        
+        ActivateModificationFunctionalityForThisGameObject();
+    }
+
+    private void ActivateModificationFunctionalityForThisGameObject()
+    {
         _modificatorOnOff.HighlightingGameObject(gameObject);
         _remainingScaleText = GameObject.Find("Remaining Scale").GetComponent<TMP_Text>();
         RemainingScale();
-        
+
         _scaleButton = GameObject.Find("IncreaseButton").GetComponent<Button>();
         _scaleButton.onClick.RemoveAllListeners();
         _scaleButton.onClick.AddListener(() => IncreaseScale());
-        
+
         _scaleButton = GameObject.Find("DecreaseButton").GetComponent<Button>();
         _scaleButton.onClick.RemoveAllListeners();
         _scaleButton.onClick.AddListener(() => DecreaseScale());
-        
+
         _rotateButton = GameObject.Find("RotateButton").GetComponent<Button>();
         _rotateButton.onClick.RemoveAllListeners();
         _rotateButton.onClick.AddListener(() => Rotate());
@@ -107,8 +111,6 @@ public class ScaleAndRotation : MonoBehaviour
         _deleteButton = GameObject.Find("DeleteButton").GetComponent<Button>();
         _deleteButton.onClick.RemoveAllListeners();
         _deleteButton.onClick.AddListener(Delete);
-
-        
     }
 
     private void RemainingScale()

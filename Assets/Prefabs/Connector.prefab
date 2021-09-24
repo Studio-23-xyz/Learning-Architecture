@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 7142109989846863832}
   m_Layer: 0
   m_Name: Connector
-  m_TagString: Untagged
+  m_TagString: SupportPillar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,8 +35,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 662664118967435086}
   m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.82, y: 1, z: 2}
+  m_LocalPosition: {x: -1.077, y: -1.077, z: 0}
+  m_LocalScale: {x: 2.8200002, y: 1, z: 2}
   m_Children:
   - {fileID: 4525930184694726173}
   - {fileID: 4166614868515573277}
@@ -84,12 +84,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0, g: 0.3435335, b: 0.9137255, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 78bbdbcdd7930d44a9e85eb5326cf948, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_DrawMode: 2
+  m_Size: {x: 3.0621119, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -123,12 +123,12 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 1.18, y: 0, z: 1.14, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 3.6, y: 1.28}
+    newSize: {x: 3.0621119, y: 1}
     adaptiveTilingThreshold: 0.5
-    drawMode: 0
+    drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
@@ -202,7 +202,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.5, y: 0}
-  m_ConnectedAnchor: {x: 0.99702066, y: 0.9970206}
+  m_ConnectedAnchor: {x: -0.07997936, y: -0.07997942}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -226,7 +226,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.5, y: 0}
-  m_ConnectedAnchor: {x: -0.99702066, y: -0.9970206}
+  m_ConnectedAnchor: {x: -2.0740206, y: -2.0740206}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0

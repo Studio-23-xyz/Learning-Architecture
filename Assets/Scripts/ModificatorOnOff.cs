@@ -23,7 +23,7 @@ public class ModificatorOnOff : MonoBehaviour
 
     public void InActiveModificatorUI()
     {
-        playButton.SetActive(false);
+        //playButton.SetActive(false);
         deleteButton.SetActive(false);
         increaseButton.SetActive(false);
         decreaseButton.SetActive(false);
@@ -33,31 +33,41 @@ public class ModificatorOnOff : MonoBehaviour
 
     public void HighlightingGameObject(GameObject lastTouchedGameObject)
     {
-        if (highlightingGameObjects[0] == null)
-        {
-            highlightingGameObjects[0] = lastTouchedGameObject;
-            var last = highlightingGameObjects[0];
-            last.transform.GetChild(1).gameObject.SetActive(true);
-            playButton.SetActive(true);
-            deleteButton.SetActive(true);
-            increaseButton.SetActive(true);
-            decreaseButton.SetActive(true);
-            rotateButton.SetActive(true);
-            scale.SetActive(true);
-        }
 
-        else
+        if (lastTouchedGameObject != highlightingGameObjects[0])
         {
-            if (highlightingGameObjects[1] != lastTouchedGameObject)
+            if (highlightingGameObjects[0] == null)
             {
-                highlightingGameObjects[1] = lastTouchedGameObject;
-                var last = highlightingGameObjects[1];
+                highlightingGameObjects[0] = lastTouchedGameObject;
+                var last = highlightingGameObjects[0];
                 last.transform.GetChild(1).gameObject.SetActive(true);
-                highlightingGameObjects[0].transform.GetChild(1).gameObject.SetActive(false);
-                highlightingGameObjects[0] = last;
+                //playButton.SetActive(true);
+                deleteButton.SetActive(true);
+                increaseButton.SetActive(true);
+                decreaseButton.SetActive(true);
+                rotateButton.SetActive(true);
+                scale.SetActive(true);
+
+                // if (lastTouchedGameObject.tag != "SupportPillar")
+                // {
+                //     rotateButton.SetActive(false);
+                // }
             }
+
+            else
+            {
+                if (highlightingGameObjects[1] != lastTouchedGameObject)
+                {
+                    highlightingGameObjects[1] = lastTouchedGameObject;
+                    var last = highlightingGameObjects[1];
+                    last.transform.GetChild(1).gameObject.SetActive(true);
+                    highlightingGameObjects[0].transform.GetChild(1).gameObject.SetActive(false);
+                    highlightingGameObjects[0] = last;
+                }
             
 
+            }
         }
+        
     }
 }
