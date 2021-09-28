@@ -4473,11 +4473,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5468613500038114790, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5468613500038114790, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5468613500038114790, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_SizeDelta.x
@@ -4489,7 +4489,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5468613500038114790, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5468613500125826184, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_AnchorMax.y
@@ -4641,11 +4641,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5468613501433899683, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5468613501433899683, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5468613501433899683, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_SizeDelta.x
@@ -4657,7 +4657,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5468613501433899683, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8181117818509472861, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
@@ -5562,7 +5562,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 79a5e5756cf624f438ba0cfbc651acc8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
