@@ -42,7 +42,8 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDrag
     
     public void OnDrag(PointerEventData eventData)
     {
-        _rectTransform.anchoredPosition += eventData.delta / _canvas.scaleFactor;
+        _rectTransform.anchoredPosition += eventData.delta / _canvas.scaleFactor * 1.2f;
+        //_newRoad.transform.position = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
         Debug.Log("drag");
     }
 

@@ -17,9 +17,11 @@ public class LeaderBoard : MonoBehaviour
     
     private GameObject _tempName;
     private dreamloLeaderBoard leaderBoardObject;
+    private DateTime _dateTime;
 
     private void OnEnable()
     {
+        leaderBoardGameObject = GameObject.Find("dreamloPrefab");
         leaderBoardObject = leaderBoardGameObject.GetComponent<dreamloLeaderBoard>();
         leaderBoardObject.GetScores();
     }
@@ -32,6 +34,7 @@ public class LeaderBoard : MonoBehaviour
     [ContextMenu("Get Leader Board")]
     public void GetLeaderBoard()
     {
+        int _rankNumber = 1;
         
         foreach (Transform child in PlayerNameParent.transform) 
         {
@@ -48,11 +51,17 @@ public class LeaderBoard : MonoBehaviour
         Debug.Log( scoreList.Count);
         foreach (dreamloLeaderBoard.Score currentScore in scoreList)
         {
+            
             if (currentScore.seconds == nameScoreLevelCollector.level)
             {
-                _tempName = Instantiate(PlayerNamePrefab, transform.position, transform.rotation, PlayerNameParent);
-                _tempName.transform.GetChild(0).GetComponent<TMP_Text>().text = currentScore.playerName + "  "+ currentScore.score;
+                var isValidDate = DateTime.TryParse(currentScore.dateString, out _dateTime);
                 
+                _tempName = Instantiate(PlayerNamePrefab, transform.position, transform.rotation, PlayerNameParent);
+                _tempName.transform.GetChild(0).GetComponent<TMP_Text>().text = _rankNumber.ToString();
+                _tempName.transform.GetChild(1).GetComponent<TMP_Text>().text = currentScore.playerName;
+                _tempName.transform.GetChild(2).GetComponent<TMP_Text>().text = currentScore.score.ToString();
+                _tempName.transform.GetChild(3).GetComponent<TMP_Text>().text = _dateTime.ToString("MM/dd/yyyy");
+                _rankNumber++;
             }
             
         }
