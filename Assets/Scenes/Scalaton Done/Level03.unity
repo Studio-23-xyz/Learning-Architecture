@@ -457,6 +457,14 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 5187203950020095085, guid: a3bb41ae87ff2024ba110119eacdb53a, type: 3}
+      propertyPath: staringPosition.x
+      value: 4.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187203950020095085, guid: a3bb41ae87ff2024ba110119eacdb53a, type: 3}
+      propertyPath: staringPosition.y
+      value: 10.42
+      objectReference: {fileID: 0}
     - target: {fileID: 5187203950020095088, guid: a3bb41ae87ff2024ba110119eacdb53a, type: 3}
       propertyPath: m_Name
       value: Car
@@ -3298,6 +3306,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5468613499574354998, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5468613499594973866, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5468613499594973866, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5468613499594973866, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 10.580688
+      objectReference: {fileID: 0}
     - target: {fileID: 5468613499603077263, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: _roadPrefabParent
       value: 
@@ -3500,6 +3524,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5468613500877345280, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5468613501032273027, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5468613501035899744, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5468613501045055205, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5468613501342384077, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}

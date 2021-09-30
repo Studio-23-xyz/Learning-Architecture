@@ -5219,11 +5219,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4812907762671987922, guid: 4a8b3dd6f6cc4e744921b0e747b1be4d, type: 3}
       propertyPath: m_SortingOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4812907763777083893, guid: 4a8b3dd6f6cc4e744921b0e747b1be4d, type: 3}
       propertyPath: m_SortingOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7515616307802213222, guid: 4a8b3dd6f6cc4e744921b0e747b1be4d, type: 3}
       propertyPath: m_Mass
@@ -5232,6 +5232,14 @@ PrefabInstance:
     - target: {fileID: 7515616307802213223, guid: 4a8b3dd6f6cc4e744921b0e747b1be4d, type: 3}
       propertyPath: moveSpeed
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7515616307802213223, guid: 4a8b3dd6f6cc4e744921b0e747b1be4d, type: 3}
+      propertyPath: staringPosition.x
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7515616307802213223, guid: 4a8b3dd6f6cc4e744921b0e747b1be4d, type: 3}
+      propertyPath: staringPosition.y
+      value: 9.25
       objectReference: {fileID: 0}
     - target: {fileID: 7515616307802213240, guid: 4a8b3dd6f6cc4e744921b0e747b1be4d, type: 3}
       propertyPath: m_RootOrder
