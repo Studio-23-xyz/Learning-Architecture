@@ -2631,6 +2631,14 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 3263997639111253370, guid: 9bf793d16ccea1e4d96b98648242e181, type: 3}
+      propertyPath: staringPosition.x
+      value: 5.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263997639111253370, guid: 9bf793d16ccea1e4d96b98648242e181, type: 3}
+      propertyPath: staringPosition.y
+      value: 9.13
+      objectReference: {fileID: 0}
     - target: {fileID: 3263997639111253371, guid: 9bf793d16ccea1e4d96b98648242e181, type: 3}
       propertyPath: m_Mass
       value: 6.5

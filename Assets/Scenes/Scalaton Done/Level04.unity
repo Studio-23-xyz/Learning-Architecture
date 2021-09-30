@@ -1643,6 +1643,14 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 5187203950020095085, guid: a3bb41ae87ff2024ba110119eacdb53a, type: 3}
+      propertyPath: staringPosition.x
+      value: 5.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187203950020095085, guid: a3bb41ae87ff2024ba110119eacdb53a, type: 3}
+      propertyPath: staringPosition.y
+      value: 8.31
+      objectReference: {fileID: 0}
     - target: {fileID: 5187203950020095088, guid: a3bb41ae87ff2024ba110119eacdb53a, type: 3}
       propertyPath: m_Name
       value: Car
