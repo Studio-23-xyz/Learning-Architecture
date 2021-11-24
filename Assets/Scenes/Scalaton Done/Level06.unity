@@ -2673,6 +2673,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -471632094505552137, guid: 9bf793d16ccea1e4d96b98648242e181, type: 3}
+      propertyPath: carSound
+      value: 
+      objectReference: {fileID: 8300000, guid: da23b3aa6f8d07546bbb2cd45fd91f41, type: 3}
+    - target: {fileID: -471632094505552137, guid: 9bf793d16ccea1e4d96b98648242e181, type: 3}
+      propertyPath: winSound
+      value: 
+      objectReference: {fileID: 8300000, guid: a7046f79c4fd26d4db5c77db2118f8a2, type: 3}
+    - target: {fileID: -471632094505552137, guid: 9bf793d16ccea1e4d96b98648242e181, type: 3}
+      propertyPath: crashSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 17978dd8312b16b4687a3ae57414c4e1, type: 3}
     - target: {fileID: 3263997639111253349, guid: 9bf793d16ccea1e4d96b98648242e181, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -3537,7 +3549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5468613500038114790, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 272.5
       objectReference: {fileID: 0}
     - target: {fileID: 5468613500038114790, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3933,7 +3945,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5468613501433899683, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 272.5
       objectReference: {fileID: 0}
     - target: {fileID: 5468613501433899683, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: m_AnchoredPosition.y

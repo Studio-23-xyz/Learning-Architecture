@@ -13,6 +13,7 @@ public class YouTubeLinkSender : MonoBehaviour
     private void Start()
     {
         youtubePlayer = GameObject.Find("FYoutubePlayer").GetComponent<YoutubePlayer>();
+
         backgroundSound = GameObject.Find("BGSound").transform.GetChild(0).gameObject;
     }
 
