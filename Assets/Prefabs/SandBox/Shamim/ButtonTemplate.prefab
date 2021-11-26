@@ -27,7 +27,7 @@ RectTransform:
   m_GameObject: {fileID: 1137805268631374947}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.83586, y: 0.83586, z: 0.83586}
   m_Children: []
   m_Father: {fileID: 1137805269312127780}
   m_RootOrder: 1
@@ -167,8 +167,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -238,7 +238,7 @@ RectTransform:
   m_GameObject: {fileID: 1137805269312127783}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2126, y: 1.2126, z: 1.2126}
+  m_LocalScale: {x: 0.8074218, y: 0.8074218, z: 0.8074218}
   m_Children:
   - {fileID: 1137805268894714324}
   - {fileID: 1137805268631374944}
