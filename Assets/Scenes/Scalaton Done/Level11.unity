@@ -4633,7 +4633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 845145118202495470, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: levelNumber
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1428299271817306090, guid: 706e53458f7eb5d4bab250a32c1caf63, type: 3}
       propertyPath: leaderBoardGameObject

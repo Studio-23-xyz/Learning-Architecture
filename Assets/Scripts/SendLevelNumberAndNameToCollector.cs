@@ -10,6 +10,13 @@ public class SendLevelNumberAndNameToCollector : MonoBehaviour
     [SerializeField] private NameScoreLevelCollector nameScoreLevelCollector;
     [SerializeField] private TMP_InputField nameInputField;
 
+    public string levelNumberOnLevel;
+
+    private void Awake()
+    {
+        levelNumberOnLevel = levelNumber.ToString();
+    }
+
     public void On_Click_GetAndSendLevelNumber()
     {
         nameScoreLevelCollector.level = levelNumber;
