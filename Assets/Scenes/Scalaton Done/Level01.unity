@@ -19135,6 +19135,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7539920714864740381, guid: a3bb41ae87ff2024ba110119eacdb53a, type: 3}
+      propertyPath: shakeDuration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7539920714864740381, guid: a3bb41ae87ff2024ba110119eacdb53a, type: 3}
+      propertyPath: shakeStrength
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5187203950020095084, guid: a3bb41ae87ff2024ba110119eacdb53a, type: 3}
       propertyPath: m_Mass
       value: 2
