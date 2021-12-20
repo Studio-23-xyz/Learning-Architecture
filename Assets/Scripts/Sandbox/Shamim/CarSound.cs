@@ -1,16 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 
 [RequireComponent(typeof(AudioSource))]
 public class CarSound : MonoBehaviour
 {
-
     public AudioSource audioSource;
     public AudioClip carSound;
     public AudioClip crashSound;
     public AudioClip winSound;
+
+    public float shakeDuration;
+    public float shakeStrength;
 
     private void Awake()
     {
@@ -41,6 +43,9 @@ public class CarSound : MonoBehaviour
             audioSource.clip = crashSound;
             audioSource.loop = false;
             audioSource.Play();
+
+            Camera.main.DOShakePosition(shakeDuration, shakeStrength);
+            Vibration.Vibrate(500);
         }
     }
 }
