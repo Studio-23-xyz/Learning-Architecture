@@ -20,7 +20,7 @@ public class ButtonList : MonoBehaviour
         for (int i=0; i < csvReader.myLearningMaterialList.learningMaterials.Length; i++)
         {
             var newCreatedButton = Instantiate(buttonTemplate, transform);
-            newCreatedButton.transform.GetChild(0).GetComponent<TMP_Text>().text = csvReader.myLearningMaterialList.learningMaterials[i].name;
+            newCreatedButton.transform.GetComponentInChildren<TMP_Text>().text = csvReader.myLearningMaterialList.learningMaterials[i].name;
             newCreatedButton.GetComponent<YouTubeLinkSender>().youtubeLink = csvReader.myLearningMaterialList.learningMaterials[i].link;
 
         }
