@@ -5,22 +5,22 @@ using UnityEngine;
 
 public class ShowLeaderBoardLevelWise : MonoBehaviour
 {
-    public int levelNumber;
+    public string levelNumber;
     
     public NameScoreLevelCollector nameScoreLevelCollector;
 
-    public LeaderBoard leaderBoard;
+    public PlayfabManager playfabManager;
     // Start is called before the first frame update
     void Start()
     {
-       leaderBoard = leaderBoard.GetComponent<LeaderBoard>();
+        playfabManager = GameObject.Find("PlayfabManager").GetComponent<PlayfabManager>();
     }
 
     public void ShowLeaderBoard()
     {
-        nameScoreLevelCollector.level = levelNumber;
-        
-        leaderBoard.GetLeaderBoard();
+        //nameScoreLevelCollector.level = levelNumber;
+
+        playfabManager.GetLeaderBoard(levelNumber);
     }
    
 }
