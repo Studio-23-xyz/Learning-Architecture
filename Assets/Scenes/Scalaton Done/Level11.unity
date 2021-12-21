@@ -5887,6 +5887,14 @@ PrefabInstance:
       propertyPath: crashSound
       value: 
       objectReference: {fileID: 8300000, guid: 17978dd8312b16b4687a3ae57414c4e1, type: 3}
+    - target: {fileID: -7851840053630546883, guid: 4a8b3dd6f6cc4e744921b0e747b1be4d, type: 3}
+      propertyPath: shakeDuration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7851840053630546883, guid: 4a8b3dd6f6cc4e744921b0e747b1be4d, type: 3}
+      propertyPath: shakeStrength
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4812907762671987922, guid: 4a8b3dd6f6cc4e744921b0e747b1be4d, type: 3}
       propertyPath: m_SortingOrder
       value: 3
