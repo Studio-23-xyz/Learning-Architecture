@@ -12,6 +12,9 @@ public class LevelComplete : MonoBehaviour
      GameObject nameInputField;
      GameObject leaderBoard;
      ModalWindowManager successUI;
+     private PlayfabManager _playfabManager;
+
+     public LeaderboardData leaderboardData;
 
     private void Start()
     {
@@ -19,6 +22,7 @@ public class LevelComplete : MonoBehaviour
         failUI = GameObject.Find("Fail UI").GetComponent<ModalWindowManager>();
         leaderBoard = GameObject.Find("Leader Board");
         nameInputField = GameObject.Find("Name Input Field");
+        _playfabManager = GameObject.Find("PlayfabManager").GetComponent<PlayfabManager>();
     }
     
     [ContextMenu("Rotate")]
@@ -43,8 +47,7 @@ public class LevelComplete : MonoBehaviour
     
     public void ShowLeaderBoard()
     {
-        leaderBoard.transform.GetChild(0).gameObject.SetActive(true);
-        leaderBoard.GetComponent<LeaderBoard>().GetLeaderBoard();
+        _playfabManager.GetLeaderBoard(leaderboardData.levelNumber);
     }
     
     public void GoToMainMenu(int sceneNumber)

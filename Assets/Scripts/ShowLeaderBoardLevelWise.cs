@@ -21,6 +21,7 @@ public class ShowLeaderBoardLevelWise : MonoBehaviour
         //nameScoreLevelCollector.level = levelNumber;
 
         playfabManager.GetLeaderBoard(levelNumber);
+        Debug.Log(levelNumber);
     }
    
 }

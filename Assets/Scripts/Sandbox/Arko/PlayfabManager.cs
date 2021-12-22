@@ -58,22 +58,28 @@ public class PlayfabManager : MonoBehaviour
     [ContextMenu("Get Leader board")]
     public void GetLeaderBoard(string levelNumber)
     {
+        Debug.Log(levelNumber);
         var request = new GetLeaderboardRequest()
         {
-            StatisticName = levelNumber,
+            StatisticName = levelNumber.ToString(),
             StartPosition = 0,
             MaxResultsCount = 20
         };
         PlayFabClientAPI.GetLeaderboard(request, OnLeaderboardGet, OnError);
         
         //leaderBoardStuffs.SetActive(true);
-        Debug.Log("Getting Leaderboard");
+        
     }
 
     private void OnLeaderboardGet(GetLeaderboardResult result)
     {
+        foreach (Transform child in leaderBoardParent.transform)
+        {
+            Destroy(child.gameObject);
+        }
         int positionNumber = 0;
-
+        Debug.Log("Getting Leaderboard");
+        Debug.Log(result.Leaderboard.Count);
         for (int i = result.Leaderboard.Count - 1 ; i >= 0; i--)
         {
             positionNumber++;
@@ -146,30 +152,30 @@ public class PlayfabManager : MonoBehaviour
  
     }
 
-    public void SubmitNameButton()
+    public void ChangeDisplayName(String displayName)
     {
-        String _displayName;
         
-        if (!String.IsNullOrWhiteSpace(nameInputField.text))
-        {
-            _displayName = nameInputField.text;
-        }
-        else
-        {
-            _displayName = Environment.UserName;
-        }
         
-        Debug.Log("My Display Name is:" + _displayName);
+        // if (!String.IsNullOrWhiteSpace(nameInputField.text))
+        // {
+        //     displayName = nameInputField.text;
+        // }
+        // else
+        // {
+        //     displayName = Environment.UserName;
+        // }
+        //
+        // Debug.Log("My Display Name is:" + displayName);
         
         var request = new UpdateUserTitleDisplayNameRequest
         {
-            DisplayName = _displayName,
+            DisplayName = displayName,
         };
         PlayFabClientAPI.UpdateUserTitleDisplayName(request, OnDisplayNameUpdate, OnError);
         
         //Invoke(nameof(SendScoreToLeaderBoard), 2f);
         
-        Invoke(nameof(GetLeaderBoard), 4f);
+        // Invoke(nameof(GetLeaderBoard), 4f);
         
         // SendScoreToLeaderBoard();
         //
