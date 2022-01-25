@@ -11631,6 +11631,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1329426483033975030, guid: 19d91213cd55bab41af6474863a125e6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1329426483033975031, guid: 19d91213cd55bab41af6474863a125e6, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -11641,7 +11645,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1329426483033975031, guid: 19d91213cd55bab41af6474863a125e6, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 11.906799
+      value: 11.123047
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329426483033975031, guid: 19d91213cd55bab41af6474863a125e6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329426483033975031, guid: 19d91213cd55bab41af6474863a125e6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329426483033975031, guid: 19d91213cd55bab41af6474863a125e6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329426483033975031, guid: 19d91213cd55bab41af6474863a125e6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329426483033975031, guid: 19d91213cd55bab41af6474863a125e6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329426483033975031, guid: 19d91213cd55bab41af6474863a125e6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1329426483075365054, guid: 19d91213cd55bab41af6474863a125e6, type: 3}
       propertyPath: m_AnchorMax.x
@@ -11655,9 +11683,21 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1329426483471444799, guid: 19d91213cd55bab41af6474863a125e6, type: 3}
+      propertyPath: m_fontSize
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329426483471444799, guid: 19d91213cd55bab41af6474863a125e6, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329426483490512611, guid: 19d91213cd55bab41af6474863a125e6, type: 3}
+      propertyPath: m_text
+      value: LeaderBoard
+      objectReference: {fileID: 0}
     - target: {fileID: 1329426483512440560, guid: 19d91213cd55bab41af6474863a125e6, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -214.13733
+      value: -213.91827
       objectReference: {fileID: 0}
     - target: {fileID: 1329426483642553864, guid: 19d91213cd55bab41af6474863a125e6, type: 3}
       propertyPath: m_AnchorMax.y
@@ -11706,6 +11746,10 @@ PrefabInstance:
     - target: {fileID: 1329426483717093619, guid: 19d91213cd55bab41af6474863a125e6, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1329426483929215400, guid: 19d91213cd55bab41af6474863a125e6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19d91213cd55bab41af6474863a125e6, type: 3}
@@ -14755,7 +14799,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Leader Board
+  m_text: Leaderboard
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fa328c1ae3ffb6b4583cf371153b0be6, type: 2}
   m_sharedMaterial: {fileID: 21918420405216288, guid: fa328c1ae3ffb6b4583cf371153b0be6, type: 2}
@@ -18883,7 +18927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d218e07e7315e243acdfcc700d01eb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: Leader Board
+  buttonText: Leaderboard
   clickEvent:
     m_PersistentCalls:
       m_Calls: []
