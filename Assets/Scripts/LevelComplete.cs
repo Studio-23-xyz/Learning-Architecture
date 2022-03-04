@@ -54,5 +54,14 @@ public class LevelComplete : MonoBehaviour
     {
         SceneManager.LoadScene(sceneNumber);
     }
+
+    public void GoToNextLevel()
+    {
+        var NextScene = SceneManager.GetActiveScene().buildIndex + 1;
+        SceneManager.LoadScene(NextScene);
+    }
+
+
+
 }
     

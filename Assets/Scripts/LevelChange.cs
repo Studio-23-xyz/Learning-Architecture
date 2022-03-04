@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class LevelChange : MonoBehaviour
 {
-    public int sceneIndexNumber;
+    public string sceneToLoad;
     
     public void On_Click_LevelChange()
     {
-        SceneManager.LoadScene(sceneIndexNumber);
+        SceneManager.LoadScene(sceneToLoad);
     }
 }
